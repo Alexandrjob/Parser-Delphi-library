@@ -1,0 +1,11 @@
+/.idea
+/git
+
+/ParserDelphi/bin
+/ParserDelphi/obj
+
+/ParserDelphiTests/bin
+/ParserDelphiTests/obj
+
+/ParserDelphi.sln.DotSettings.user
+/PasrserDelphi.sln.DotSettings.user
