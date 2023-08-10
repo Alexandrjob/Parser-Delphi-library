@@ -1,5 +1,4 @@
 ﻿using System.Text.RegularExpressions;
-using ParserDelphi;
 
 namespace ParserDelphi.Words;
 
@@ -21,9 +20,12 @@ public class Class : WordsBase, ITypeWords
     
     public new void Save(Dictionary<string, string> dic, string value)
     {
-        var key = WORD + " " + value.Trim().Split(' ').FirstOrDefault();
+        var className = value.Trim().Split(' ').FirstOrDefault();
+        var key = WORD + " " + className;
+
+        Parser.Info.ClassName = className;
+        
         if(!dic.TryGetValue(key, out _))
             dic.Add(key, value);
-        ;
     }
 }
