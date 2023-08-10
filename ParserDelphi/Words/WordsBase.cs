@@ -5,7 +5,7 @@ public class WordsBase
     private string WORD;
     public bool IsEnd { get; set; }
 
-    public WordsBase(string word)
+    protected WordsBase(string word)
     {
         WORD = word;
     }
